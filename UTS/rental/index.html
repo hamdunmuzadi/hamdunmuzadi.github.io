@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/img/style.css">
+    <link rel="manifest" href="/.vscode/settings.json" crossorigin="use-credentials">
+
+
+    <title>RENTAL</title>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-items">
+            <div class="nav-text">
+                <img src="/img/20221112_230540.png" alt="error" class="image">
+            </div>
+        </div>
+    </div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"
+                href="https://api.whatsapp.com/send/?phone=6282117579147&text&type=phone_number&app_absent=0">WhatsApp</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/asset/login/">LogIn</a>
+        </li>
+    </ul>
+    <!-- NAVBAR -->
+
+    <!-- Content firts -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="rental">
+                <p class="pe">Nama : <input class="inpt" type="text" name="nama" id="nama" placeholder="Masukan Nama"></p>
+                <br>
+                <p class="pe">No Handphone : <input class="inpt" type="tel" id="tel"
+                        placeholder="Masukan No Handphone"></p>
+                <br>
+                <p class="pe">Tanggal Rental : <input class="inpt" type="date" value="date" id="date"></p>
+                <br>
+                <p class="pe">Jenis Mobil : <select class="inpt" value="mobil" id="mobil">
+                        <option value="Box" id="box">BOX</option>
+                        <option value="Minibus" id="minibus">MINIBUS</option>
+                        <option value="Pickup" id="pickup">PICK UP</option>
+                    </select>
+                </p>
+                <br>
+                <p class="pe">Lama Rental/Hari :
+                    <input class="inpt" type="number" value="Hari" id="hari" placeholder="Hari">
+                </p>
+                <br>
+                <input class="submite" onclick="tampilkanData()" type="submit" name="total" id="total">
+                <div class="struk">
+                    <legend style="text-align:center;">GoRental</legend>
+                    <p class="struk-text">Nama : <span id="name"></span></p>
+                    <p class="struk-text">No Telephone : <span id="no"></span></p>
+                    <p class="struk-text">Tanggal : <span id="tgl"></span></p>
+                    <p class="struk-text">Mobil : <span id="car"></span></p>
+                    <p class="struk-text">Hari : <span id="day"></span></p>
+                    <p class="struk-text">Total : <span id="Total"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content firts -->
+
+
+
+
+
+    <script src="/service-workers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
